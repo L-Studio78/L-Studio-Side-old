@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>L-Studio</title>
+    <link rel="stylesheet" href="Css/styel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Icons/Icon File.png">
+    <link rel="shortcut icon" href="/layout/frontend/b2c/dist/favicons/favicon.ico?v1=get">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="google-site-verification" content="VG8ePdrHh1IdiQoJOWinvgU53T_Gtzh7C_dyW8lmOlY" />
+    <link rel="stylesheet" href="Css/Start.css">
+    <script defer src="JS/scrolling.js"></script>
+    <script defer src="JS/scrollingright.js"></script>
+    <script src="JS/titel.js"></script>
+
+    <script>
+        // Funktion zur Erkennung, ob die Seite auf einem mobilen Gerät geöffnet ist
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+    
+        // Hauptfunktion, um die Warnung anzuzeigen
+        function showMobileWarning() {
+            if (isMobile()) {
+            
+            }
+        }
+    
+        // Aufruf der Funktion beim Laden der Seite
+        window.onload = showMobileWarning;
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX3HCX5K4W"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX3HCX5K4W');
+</script>
+<body>
+<!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+
+    <header>
+        <div class="intro">
+            <div>
+                <p>L-Studio</p>
+                <br><br><br>
+            </div>
+        </div>
+        <nav>
+            <div class="na">
+            <h2 class="l" >L</h2><h1 >-Studio</h1> 
+            </div>
+            <br>
+            
+        </nav>
+<br><br><br>
+<hr>
+<div class="nav">
+    
+<a class="link-nav" href="https://calculatorlstudio.netlify.app">Rechner</a>-
+<a class="link-nav" href="https://pokealbum.netlify.app">Pokéalbum</a>-
+<a class="link-nav" href="https://mint-block.netlify.app">Mint Block</a>-
+<a class="link-nav" href="https://ki-tolls.netlify.app">KI-Tools</a>-
+<a class="link-nav" href="https://binaerer-code-converter.netlify.app">Binärer Code Converter</a>-
+<a class="link-nav" href="https://zeitzonenkonverter.netlify.app">Zeitzonenkonverter</a>-
+<a class="link-nav" href="https://binaer-calculator.netlify.app">Binärer Rechner</a>-
+<a class="link-nav" href="https://l-studio-projekte.netlify.app">Einfache Projekte</a>-
+<a class="link-nav" href="https://hall-of-science.netlify.app">hall-of-science</a>
+
+
+</div>
+<hr>
+
+
+    </header>
+        <div class="Icon-side">
+            <div class="Menü-icon-Round">
+                <div>
+                    <div class="Menü-icon"></div>
+                    <div class="Menü-icon"></div>
+                    <div class="Menü-icon"></div>
+                </div>
+            </div>
+            <div class="Links-Menü">
+                <div class="Youtube-Menü">
+                    <a href="https://www.youtube.com/channel/UCe0w6Jye9RaUw3w4RLfvNUg"><img src="Icons/Youtube.png" alt="">  </a>
+                </div>
+                <div class="Discord-Menü">
+                    <a href="https://discord-von-l-studio.netlify.app"><img src="Icons/Discord.png" alt=""></a>
+                </div>
+                <div class="Tik-Tok-Menü">
+                    <a href="https://www.tiktok.com/@l.studio051" ><img src="Icons/Tik Tok.png" alt=""></a>
+                </div>
+                <div class="Insta-Menü">
+                    <a href="https://www.instagram.com/lstudio051/"><img src="Icons/Insta.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    <main>    
+<!--
+
+<div id="cookie-banner-container">
+    <div id="cookie-banner">
+        <br><br>
+        <p>Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern und die Leistung der Website zu analysieren. Wir respektieren Ihre Privatsphäre. Mit dem Klicken auf "Zustimmen" stimmen Sie der Verwendung aller Cookies zu. Weitere Informationen finden Sie in unseren <a href="Datenschutz.html">Datenschutzrichtlinien</a> und <a href="Datenschutz.html">Cookie-Richtlinien</a>.</p>
+        <button id="accept-cookies">Zustimmen</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript für das Cookie-Banner
+    const cookieBanner = document.getElementById('cookie-banner-container');
+    const acceptCookiesButton = document.getElementById('accept-cookies');
+
+    // Funktion zum Speichern der Cookie-Zustimmung
+    function saveCookieConsent() {
+        localStorage.setItem('cookieConsent', 'true');
+        cookieBanner.style.display = 'none';
+    }
+
+    // Überprüfen, ob die Cookie-Zustimmung bereits erteilt wurde
+    const hasCookieConsent = localStorage.getItem('cookieConsent') === 'true';
+
+    // Wenn keine Zustimmung erteilt wurde, das Banner anzeigen
+    if (!hasCookieConsent) {
+        cookieBanner.style.display = 'flex'; // Flexbox für die Mitte der Seite
+    }
+
+    // Event Listener für die Zustimmung
+    acceptCookiesButton.addEventListener('click', saveCookieConsent);
+</script>
+-->
+
+
+
+<br>
+<br>
+<!--
+    <div class="sticky" >
+
+        <br>
+        <hr>
+        <br>
+
+        <H2 class="header-side-nav">Navigiere dich durch die Side.</H2>
+
+        <h3 class="nav-sections-bar-non-link">
+        <a class="nav-sections-bar" href="#Start" >Start 📱 </a>
+        <a class="nav-sections-bar" href="#Karte📌">Karte📌</a>
+        <a class="nav-sections-bar" href="#Fähigkeiten🎞">Fähigkeiten🎞</a>
+        <a class="nav-sections-bar" href="#Über uns ✨">Mehr über uns ✨</a>
+        <a class="nav-sections-bar" href="#Momentane-Projekte">Momentane-Projekte📓</a>
+        <a class="nav-sections-bar" href="#Software">Software📂</a>
+        <a class="nav-sections-bar" href="#Links">Links 💻</a>
+        <br>
+        </h3>
+        <br>
+        <hr>
+        <br>
+     </div>
+
+    <br><br><br>
+-->
+    <br><br>
+    <section class="hidden">
+        <div>
+            <div class="erk">
+                <div>
+                    <h1 class="start-Überschrift"> <br><br>
+                        Hallo Welt🖐, wir sind L-Studio.</h1> <br><br>
+
+                </div>
+
+                <br><br>
+
+            </div>
+            <div class="erk-Start">
+                <br><br>
+
+                <img style="border-radius:  20px;" src="Screenshot 2022-07-09 192903.png" alt="">
+    
+            </div>
+            <div class="erk-Start">
+                <h3>
+                    <br><br>
+                    <p>Wir stehen Ihnen gerne zur Seite, wenn es um <strong>individuelle Webseiten </strong>und <strong>Apps </strong> geht.</p>
+                    <p>Mit unserer <strong>Leidenschaft</strong>  für Technologie und Design bemühen wir uns,</p>
+                    <p> maßgeschneiderte Lösungen für Organisationen jeder Größe anzubieten.</p>
+                    <br>
+                    <p> Unsere Webseiten zeichnen sich durch <strong> Schnelligkeit, Sicherheit und Benutzerfreundlichkeit</strong> aus.</p>
+                    <p> Zusätzlich zur Webentwicklung haben wir uns auch auf die Erstellung von Apps und SEO spezialisiert.</p>
+                    <br>
+                    <p>Unser Ziel besteht darin, Ihre Marke zu stärken und Ihnen durch ansprechende </p>    
+                    <p>und funktionale Online-Präsenzen einen Wettbewerbsvorteil zu verschaffen.</p>    
+                    
+                    <br><br>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    
+    <br><br><br>
+    <!--    <section id="WebSuche">
+            
+    <div class="erk" style="font-size: 30px;">
+        <H1>
+           Web Suche
+        </H1>
+    </div>
+    
+    <div class="erk">
+        <br>
+        <input class="search-box  search-txt" type="text" id="suche" name=" " placeholder="Web Suche" onkeydown="Event_Key();">
+        <a class="search-btn" href="#" onclick="suchen()">
+            <i class="fas fa-search"></i>
+        </a>
+        <br>
+    </div>  
+    
+    </section>
+    
+    
+    
+    <script type="text/javascript">
+        function suchen(){
+                        var s =document.getElementById("suche").value;
+                        window.location = "https://www.google.com/search?q=" + s;
+            
+        }
+        function Event_Key()
+        {
+            if(event.keyCode == 13)
+                {
+                    suchen();
+                }
+        }
+        
+    </script> -->
+    <br><br><br>
+
+  
+    
+
+    <br><br><br><br>
+    <br>
+
+
+    <section class="hiddenright" >
+
+        <div> 
+
+            <div class="erk" style="font-size: 30px;">
+             <H1>
+                <br>
+                Karte📌
+                <br>
+                <br>
+            </H1>
+            </div>
+    
+                <div class="erk">
+            <iframe style="border-radius:  20px; width: 70%;" class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d161547.72353698526!2d7.1973165!3d50.753637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6aba06530d601b43%3A0x9771405782a98296!2sL-Studio!5e0!3m2!1sde!2sde!4v1688832969921!5m2!1sde!2sde" width="600px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <br><br>
+        </div>
+    
+            <div class="erk">
+                <br><br>
+                <h4>
+                    <br>
+                    wir sind im Bereich Bonn Königswinter in NRW.
+                </h4>
+            </div>
+
+    </section>
+
+<!--         
+
+
+    </div>
+    
+<br><br><br><br><br>
+
+<div class="erk">
+    <H1>
+        Darkmode ⚫⚪
+        <br><br>
+    </H1>
+    </div>
+    <div class="erk">
+    
+    
+        
+    <h3>
+        Wechseln sie mit dem Drücken des Buttons zum Dark/Light Modus.
+    </h3>
+
+    
+
+      
+    </div>
+    <div class="bott" class="erk">
+    
+        <button id="dark_mode_button">Hell/Dunkel</button>
+    </div>
+   
+    <br>
+    <br>
+
+
+--> 
+
+
+<br><br><br><br><br><br><br>
+       
+<section class="hidden" >
+
+
+    <H1 class="Fähigkeiten-überschrift" style="font-size: 30px;">
+        Fähigkeiten🎞
+        <br><br><br>
+    </H1>
+
+
+    <div class="timeline">
+        <div class="container left hidden logo1">
+          <div class="content">
+            <h2>Html</h2> <i style="width: 200%;" class='bx bxl-html5'></i><br>
+            <p>Eine Markup Language zum Grundgerüst von Webseiten.</p>
+            <a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">more about it.</a>
+          </div>
+        </div>
+        <div class="container right hiddenright logo1">
+            <div class="content">
+              <h2>Css</h2> <i style="width: 200%;" class='bx bxl-css3' ></i> <br>
+              <p>Eine Sprache mit der man das Design von Webseiten bestimmt.</p>
+              <a href="https://de.wikipedia.org/wiki/CSS">more about it.</a>
+            </div>
+          </div>
+          <div class="container left hidden logo1">
+            <div class="content">
+              <h2>Js</h2> <i class='bx bxl-javascript' ></i> <br>
+              <p>Eine Programmier Sprache mit der man Funktionen in Webseiten einbauen kann.</p>
+              <a href="https://de.wikipedia.org/wiki/JavaScript">more about it.</a>
+            </div>
+          </div>
+          <div class="container right hiddenright logo1">
+            <div class="content">
+              <h2>Typescript</h2> <i class='bx bxl-typescript'></i> <br>
+              <p>TypeScript ist eine von Microsoft entwickelte Skriptsprache.</p>
+              <a href="https://de.wikipedia.org/wiki/TypeScript">more about it.</a>
+            </div>
+          </div>
+          <div class="container left hidden logo1">
+            <div class="content">
+              <h2>Python</h2> <i class='bx bxl-python' ></i> <br>
+              <p>Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache. Sie hat den Anspruch, einen gut lesbaren, knappen Programmierstil zu fördern.</p>
+              <a href="https://de.wikipedia.org/wiki/Python_(Programmiersprache)">more about it.</a>
+            </div>
+          </div>
+          <div class="container right hiddenright logo1">
+            <div class="content">
+              <h2>Java</h2> <i class='bx bxl-java' ></i> <br>
+              <p>Java ist eine objektorientierte Programmiersprache</p>
+              <a href="https://de.wikipedia.org/wiki/Java_(Programmiersprache)">more about it.</a>
+            </div>
+          </div>
+          <div class="container left hidden logo1">
+            <div class="content">
+              <h2>C</h2> <br>
+              <p>C ist eine imperative und prozedurale Programmiersprache.</p>
+              <a href="https://de.wikipedia.org/wiki/C_(Programmiersprache)">more about it.</a>
+            </div>
+          </div>
+          <div class="container right hiddenright logo1">
+            <div class="content">
+              <h2>C++ 
+              </h2><i class='bx bxl-c-plus-plus'></i> <br>
+              <p>C++ ist eine von der ISO genormte Programmiersprache.</p>
+              <a href="https://de.wikipedia.org/wiki/C%2B%2B">more about it.</a>
+            </div>
+          </div>
+      </div>
+
+</section>
+
+<br><br><br><br>
+
+<br><br>
+    <br>
+
+
+
+
+    <section  class="hidden" class="Slideshow">
+        <div class="erk" style="font-size: 30px;">
+            <H1>
+                <br><br>Slideshow📓</H1>
+        </div>
+        <div class="erk ">
+    
+            <div style="width: 100%;" class="slideshow-container">
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Screenshot 2022-07-09 192903.png" alt="Bild 1">
+                </div>
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Slideshow/code.png" alt="Bild 2">
+                </div>
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Slideshow/KiTools.png" alt="Bild 3">
+                </div>
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Slideshow/Mint-Block.png" alt="Bild 4">
+                </div>
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Slideshow/Binary Rechner.png" alt="Bild 5">
+                </div>
+                <div class="slide">
+                    <img style="border-radius:  20px;" src="Slideshow/Youtube.png" alt="Bild 6">
+                </div>
+        
+            </div>
+    
+    
+    
+        </div>
+        
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            // JavaScript für die Slideshow
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                const slides = document.getElementsByClassName("slide");
+                const dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000); // Ändert das Bild alle 2 Sekunden
+            }
+        </script>
+    </section>
+
+    <br><br><br><br><br>
+    <br><br><br><br>
+
+
+
+
+    <section class="hiddenright">
+    
+        <div class="erk" style="font-size: 30px;">
+            <H1>
+                <br><br>
+              Momentane Projekte🎤
+              <br><br>
+            </H1> 
+        </div>
+<div class="erk spiel">
+
+
+           
+    <!--Test-->
+
+    
+        <div id="game-container">
+            <div class="rainbow-text">
+                <br><br>
+                WEB BAUSTEINE
+                <br><br>
+            </div>
+            <h2>
+                von L-Studio
+            </h2>
+            <br>
+            <h5>
+                WASD zum Steuern
+            </h5>
+    
+            <br><br>
+            <div class="score">Score: 0</div>
+            <br><br>
+            <canvas class="game-canvas" id="tetris" width="300" height="600"></canvas>
+            <br><br>
+            <button class="button-spiel" id="start-button">Start</button>
+      <!--  <button id="pause-button">Pause</button>  -->
+            <div id="game-over" class="game-over"></div>
+        </div>
+    
+<script src="JS/Webbaustein.js" ></script>
+
+    
+    </div>
+
+
+
+        <div class="erk">
+            <h3>
+                <br><br>
+                WEB BAUSTEINE" ist ein unterhaltsames und süchtig machendes Browserspiel, das Geschicklichkeit und schnelles Denken erfordert. <br>
+                 Das Spiel wurde von L-Studio entwickelt und bietet Spielern die Möglichkeit, ihre Fähigkeiten im Stapeln und Positionieren von Bausteinen zu testen. <br>
+                  Ziel des Spiels ist es, herabfallende Bausteine so zu platzieren, dass sie das Spielfeld füllen, ohne die oberen Bildschirmgrenzen zu berühren. <br>
+                  Weiteres erfahrt ihr in unserem neusten <a href="https://youtube.com/shorts/ayx92g36VYo?si=Y0rCitN9uEZAox__">Short</a>. <br>
+                  Die Spiel Vorschau ist eine Beta und wir würden uns über feedback freuen unter der Email: <a href="mailto:lstudio051@gmail.com">lstudio051@gmail.com</a> <br>
+                <br><br>
+            </h3>
+        </div>
+        <br><br><br><br>
+
+        <div class="erk">
+            <H2>Miron <br><br> </H2>
+        </div>
+
+        <div class="erk">
+            <img class="img-miron" style="border-radius:  20px;" src="Momentane projekte/Miron.png" style="width: 10%; height: 10%;" alt="">
+        </div>
+
+        <div class="erk">
+            <h3>
+                <br><br>
+                <p>Miron ist ein Sprachassistent, basierend auf Python.</p>
+                <p>Er verfügt über sämtliche Funktionen wie Programme zu öffnen webseiten</p>
+                <p>oder witze erzählen er kann dir auch System Daten nennen und</p>
+                <p>interaktive unterhaltungen bieten.</p>
+                <p>Weiteres erfahrt ihr in unserem neusten <a href="https://youtube.com/shorts/sNuPW5CziHs?si=FsKYxDvmxLxZKa5K">Short</a>.</p>
+                <p>Beta script gibt es auch unter diesen <a href="https://l-studio-projekte.netlify.app/miron">Link</a>.</p>
+                <br><br>
+            </h3>
+        </div>
+</div>
+    </section>
+    <br><br><br><br><br>
+
+
+
+    <section class="hidden">
+
+        <div class="erk" style="font-size: 30px;">
+            <H1>
+                <br><br>
+              Software die wir verwenden: 📁
+              <br><br>
+            </H1> 
+        </div>
+
+        <div>
+
+            <div class="erk">
+                    <H2 class="Überschrift-Software"> <br><br>1. VS Code <br><br> </H2> 
+            </div>
+            <div class="erk">
+               <i class='bx bxl-visual-studio'></i>
+
+            </div>
+                <div class="erk">
+                  <h3>
+                    <br><br><br>    
+                    <p>Visual Studio Code ( <a href="https://code.visualstudio.com">VS Code</a> ) ist eine leistungsstarke, plattformübergreifende Entwicklungsumgebung von Microsoft.</p> 
+                    <p> Mit einer schlanken Benutzeroberfläche und einer Fülle von Erweiterungen ist sie beliebt in der Entwicklergemeinschaft. </p> 
+                    <p>  Der integrierte Code-Editor bietet Funktionen wie Syntaxhervorhebung, IntelliSense und Git-Integration. </p> 
+                    <p>  Durch Anpassbarkeit und kostenfreie Verfügbarkeit ist VS Code eine flexible Wahl für Entwickler auf </p> 
+                    <p>   der Suche nach Effizienz und Vielseitigkeit. </p> 
+                  </h3>
+                  <br><br><br><br>
+                </div>
+
+            
+
+            <div class="erk">
+                <br><br><br><br>
+                  <H2 class="Überschrift-Software"> <br><br> 2. Unity <br><br> </H2> 
+            </div>
+            <div class="erk">
+
+                <br><br>
+                <i class='bx bxl-unity' ></i>
+                <br><br>
+            </div>
+                <div class="erk">
+                    <h3>
+                        <br><br><br>
+                        <a href="https://unity.com/de">Unity</a> ist eine plattformübergreifende Spieleentwicklungsplattform von Unity Technologies. <br>
+                        Mit einem benutzerfreundlichen Editor ermöglicht sie die Erstellung von 2D- und 3D-Spielen. <br>
+                         Unterstützt durch C# für die Skriptentwicklung bietet Unity leistungsstarke Grafik- und Physik-Engines. <br>
+                          Der Asset Store erleichtert den Zugriff auf vorgefertigte Assets und Plugins. <br>
+                           Beliebt in der Spieleentwicklergemeinschaft, ist Unity auch in anderen Bereichen vielseitig einsetzbar, <br>
+                            darunter Simulation und virtuelle Realität. <br>
+                        <br><br><br><br>
+                    </h3>
+                    <br><br><br><br>
+                </div>
+
+                
+        </div>
+
+    </section>
+
+
+
+    <br><br><br><br><br>
+    <br><br><br><br>
+    <section class="hiddenright">
+        <br><br><br><br>
+    <div class="erk" style="font-size: 30px;">
+    
+        <H1>
+            <br>
+           Mehr über uns ✨
+        </H1>
+    </div>
+    <br><br>
+    <div class="erk">
+        <iframe style="border-radius: 20px;" src="https://app.vectary.com/p/1epMsPT0dkWZA5As1A8Wbu" frameborder="0" width="40%" height="380"></iframe>
+    </div>
+    <br>
+    <div class="erk">
+
+        <br><br><br>   
+            <h3>
+                <br><br><br>
+                L-Studio erstellung hochwertiger Webseiten. <br>
+                 Mit dem Fachwissen des L-Studio Teams und unserer Leidenschaft für Technologie und Design bieten wir maßgeschneiderte Lösungen <br>
+                  für Organisationen unterschiedlicher Größenordnungen und für L-Studio. <br> <br>
+        
+                
+                Die Beschäftigungen von L-Studio umfassen die Entwicklung responsiver Websites, die sich an verschiedene Geräte und Bildschirmgrößen anpassen, <br>
+                 um eine optimale Darstellung auf Desktops, Tablets und Mobilgeräten zu gewährleisten. Wir verwenden modernste Technologien und Frameworks, <br>
+                  um Webseiten mit schneller Ladezeit, hoher Leistung und Sicherheit zu entwickeln. <br><br>
+                
+                Bei L-Studio verstehen wir die Bedeutung einer soliden Informationsarchitektur und einer intuitiven Benutzeroberfläche. <br>
+                 Wir legen großen Wert auf die Usability und stellen sicher, dass Besucher leicht durch die Website navigieren <br>
+                  und die gewünschten Informationen oder Dienstleistungen schnell finden können. <br><br>
+                
+                Unsere Expertise erstreckt sich auch auf die erstellung von Apps und Programmen <br>
+                
+                Darüber hinaus arbeiten wir auch an Suchmaschinenoptimierung (SEO), <br><br>
+                
+                L-Studio ist bestrebt, modernste Webentwicklungslösungen anzubieten, <br>
+                 die auf die spezifischen Anforderungen von uns und unseren Nutzern zugeschnitten sind. <br>
+                  Unser Ziel ist es, ansprechende und funktionale Websites zu schaffen, <br>
+                   die das Markenimage von uns stärken, ihre Zielgruppen ansprechen und ihnen einen Wettbewerbsvorteil verschaffen. <br><br>
+
+                L-Studio wurde im Jahr 2022 gegründet. <br>
+                Er erichtete L-Studio mit dem Ziel Fortschritt in der Programmierung <br>
+                zu erzielen. <br>
+                <br><br>
+                </h3>
+
+                
+          
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+
+
+
+
+
+    <br><br><br><br>
+    <br>
+<section class="hidden">
+
+    <div class="erk">
+        <H1>
+            <br><br><br>
+            ❓ Webseiten mit Interesantem zu wissen ❓
+        </H1> 
+    </div>
+
+
+   
+            <div class="erk">
+        
+        
+                <H2>
+                    <br><br>
+                    <a class="informativ_Webseit" href="https://hall-of-science.netlify.app">Hall of science</a> <br><br>
+                    <a class="informativ_Webseit" href="https://eine-milionen-ziffern-von-pi.netlify.app">1 Millionen stellen von PI</a> <br><br>
+                    <a class="informativ_Webseit" href="https://mint-block.netlify.app">MINT-Block</a> <br><br>
+                    <a class="informativ_Webseit" href="https://ki-tolls.netlify.app">KI-Tools</a> <br><br>
+                    <a class="informativ_Webseit" href="https://pokealbum.netlify.app">Pokéalbum</a> <br><br>
+
+                    <br><br><br>
+                </H2>
+            </div>
+            <div class="erk">
+                <H1>
+                    🧭 Webseiten mit nützliche Anwendungen 🧭
+            
+                </H1>
+                    </div>
+                    <div class="erk">
+
+                
+                
+                        <H2>
+                            <br><br>
+                            <a class="usefull_Webseit" href="https://l-studio-projekte.netlify.app">Projekte</a> <br><br>
+                            <a class="usefull_Webseit" href="https://calculatorlstudio.netlify.app">Rechner</a> <br><br>
+                            <a class="usefull_Webseit" href="https://binaerer-code-converter.netlify.app">Binärer Code Converter</a> <br><br>
+                            <a class="usefull_Webseit" href="https://binaer-calculator.netlify.app">Binärer Rechner</a> <br><br>
+                            <a class="usefull_Webseit" href="https://zeitzonenkonverter.netlify.app">Zeitzonenkonverter</a> <br><br>
+                            <br><br><br>                       
+                        </H2>
+                    </div>
+                    <div class="erk">
+                        <H1>
+                           🎮 Spiele 🎮
+                       </H1>
+                       </div>
+                        <div class="erk">
+                                               
+                                               
+                            <H2>
+                               <br><br>
+                              <!-- <a class="game_webseit" href="https://mony-clicker.netlify.app"></a> <br><br> -->  
+                                 <br><br><br>
+                            </H2>
+                       </div>
+                    </section>
+                        
+                        
+<br><br><br><br>
+<br><br><br>
+
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "aize35z3fE--m2PkoVWLh",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="aize35z3fE--m2PkoVWLh"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+
+<hr >
+
+<footer class="du">
+
+ 
+    <div class="di">
+  
+  
+  
+    <h4>
+        <br><br>
+      Ich hoffe dir geffält die Webseite 😊 und wenn nicht <br>
+       könnt ihr Verbesserungsvorschläge als Mail an <br>
+
+       <!--Mail für die Webseite--> <a href="mailto:lstudio051@gmail.com">lstudio051@gmail.com</a><br>
+
+      schicken.😊 <br>
+     Hier geht es um unsere social media platformen<br><br>
+      <br>
+
+    <a href="https://discord-von-l-studio.netlify.app"id="downsection"><img src="Icons/Discord.png" alt=""></a>
+    <a href="https://www.instagram.com/lstudio051/"id="downsection"><img src="Icons/Insta.png" alt=""></a>
+    <a href="https://www.tiktok.com/@l.studio051"id="downsection" ><img src="Icons/Tik Tok.png" alt=""></a>
+    <a href="https://www.youtube.com/channel/UCe0w6Jye9RaUw3w4RLfvNUg" id="downsection"><img src="Icons/Youtube.png" alt="">  </a>
+
+
+      <br><br>
+
+      <a href="https://impresum-l-studio.netlify.app" class="downsection">Impresum</a>
+      <a href="Datenschutz.html" class="downsection" >Datenschutz</a>
+      <a href="Login.html" class="downsection">Login</a>
+      <br><br>
+
+      <p>©L-Studio 2023</p>
+     
+      <br>
+    </h4>
+    <br>
+  <div>
+  
+  </div>
+
+
+
+    </div>
+  </footer>
+
+
+</body>
+</html>

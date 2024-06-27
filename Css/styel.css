@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+:root{
+
+  --primary-color: white;
+  --secandary-color: #131316;
+  --box-color: rgb(50, 50, 50);
+  --nav-color: whitesmoke;
+  --nav-hover-color: rgb(84, 73, 85);
+  --nav-bar-sections: rgb(0, 0, 0) ;
+}
+.dark-mode{
+--primary-color: #131316;
+--secandary-color: white;
+--box-color: whitesmoke;
+--nav-color: rgb(50, 50, 50);
+--nav-hover-color: rgb(116, 107, 117);
+--nav-bar-sections: rgb(255, 255, 255) ;
+}
+html{
+  scroll-behavior: smooth;
+  max-width: 9000px;
+  box-sizing: border-box;
+}
+body{
+  margin: 40px;
+  background-color: #131316;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: nav-bar-sections;
+  animation-duration: 2s; 
+  animation-name: body;
+  animation-duration: 2s;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Stil für die Kommentare */
+.comment {
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+.Start{
+    justify-content: space-between;
+}
+
+.Bild{
+border-radius: 7rem;
+  width: 4%;
+
+}
+
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ 
+ 
+nav{
+    justify-content: center;
+    font-family: 'Akshar', sans-serif;
+    color: var(--primary-color);
+    display: center;
+    justify-content: center;
+    border: 2rem;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-family: 'Akshar', sans-serif;
+}
+.nav{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px 0; 
+}
+.link-nav{
+    color: rgb(47, 137, 255);
+    font-family: 'Akshar', sans-serif;
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgb(3, 145, 240),
+                0px 0px 12px rgb(7, 3, 240),
+                0px 0px 16px rgb(7, 3, 240);
+}
+:hover.link-nav{
+    color: rgb(6, 252, 39);
+    text-decoration: underline;
+    text-shadow: 0px 0px 8px rgb(3, 240, 3),
+    0px 0px 12px rgb(3, 240, 15),
+    0px 0px 16px rgb(3, 240, 15);
+}
+.na{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.l{
+    
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+                 0 0 10px rgb(24, 21, 206),
+                 0 0 20px rgb(40, 16, 253),
+                 0 0 40px rgb(5, 46, 228),
+                 0 0 60px rgb(0, 145, 133),
+                 0 0 90px rgb(5, 134, 255),
+                 0 0 120px rgb(8, 233, 158),
+                 0 0 160px rgb(0, 255, 179);
+}
+.box{
+  width: 100px;
+  padding: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-set,-set);
+  background-color: rgba(0,0,0,0. 4);
+  text-align: center;
+}
+.erk{
+   color: var(--primary-color);
+   border: 2rem;
+   justify-content: center
+   ;border: 2rem;
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   display: flex;
+   text-align: center;
+   font-family: 'Akshar', sans-serif;
+   animation-name: body;
+   animation-duration: 3s;
+}
+.erk-Start{
+  color: var(--primary-color);
+  border: 2rem;
+  justify-content: center
+  ;border: 2rem;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  display: flex;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  animation-name: body;
+  animation-duration: 3s;
+}
+.ni{
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+   color: black;
+   font-family: 'Akshar', sans-serif;
+   
+}
+.du{
+   font-family: 'Akshar', sans-serif;
+   color: var(--primary-color);
+   background-color:var(--secandary-color);
+   justify-content: center
+   ;border: 2rem;
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   display: flex;
+   text-align: center;
+   position: relative;;
+   justify-content: center
+   ;border: 2rem;
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   display: flex;
+   text-align: center;
+   position: relative;
+}
+.di{
+   justify-content: space-between;
+}
+/* Set a background color */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(94, 91, 91);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(94, 91, 91);
+  border: 4px solid #2600ff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(94, 91, 91);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(94, 91, 91);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(94, 91, 91);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(94, 91, 91) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(94, 91, 91);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid rgb(94, 91, 91);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+.Fähigkeiten-überschrift{
+  text-align: center;
+  color: white;
+  font-family: 'Akshar', sans-serif;
+}
+button{
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  background:var(--primary-color);
+  color: var(--secandary-color);
+  border: none;
+  border-radius: 100px;
+  transition: 150ms ease;
+  user-select: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button:hover{
+  width: 210px;
+}
+button:focus{
+  outline: none;
+}
+.bott{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downsection1{
+  color: rgb(0, 26, 255);
+}
+.downsection{
+  color: #00f;
+}
+.YoutubeLink{
+  color: red;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  
+}
+.usefull_Webseit{
+  color: cyan;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+.informativ_Webseit{
+  color: rgb(255, 251, 0);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+.game_webseit{
+  color: chartreuse;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+.YoutubeLink:hover{
+  text-decoration: underline;
+}
+.usefull_Webseit:hover{
+  text-decoration: underline;
+}
+.informativ_Webseit:hover{
+  text-decoration: underline;
+}
+.game_webseit:hover{
+  text-decoration: underline;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  background-color: #131316;
+
+  text-align: center;
+  animation-name: nav-bar-sections;
+  animation-duration: 2s;
+  font-family: 'Dosis', sans-serif;
+  z-index: 2;    
+}
+.nav-sections-bar{
+  color: gray;
+  background-color: #131316;
+  align-items: center;
+  text-decoration: none;
+  font-family: monospace;
+  overflow: hidden;
+  height:1.1em;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+@keyframes sticky {
+  from {background-color: rgb(62, 71, 197);}
+  to {background-color: #131316;}
+}
+.nav-sections-bar:hover{
+  text-align: center;
+  color: var(--nav-hover-color);
+  text-shadow: 4px green;
+}
+.nav-sections-bar-non-link{
+  align-items: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+.header-side-nav{
+  text-align: center;
+  color: dimgrey;
+}
+
+.hide {
+  visibility: hidden;
+
+}
+.show {
+  visibility: visible;
+
+}
+
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+  .hide {
+    bottom: 2em;
+    right: 0;
+  }
+  .show {
+    right: 0;
+    bottom: 0;
+  }
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+  .image-start{
+    width: 70%;
+  }
+  .img-miron{
+    width: 70%;
+  }
+
+  .erk-Start{
+    background-color: var(--box-color);
+    color: var(--primary-color);
+    border: 2rem;
+    justify-content: normal;
+    border: 2rem;
+    align-items: normal;
+    align-self: normal;
+    align-content: normal;
+    display: none;
+    text-align: normal;
+    font-family: 'Akshar', sans-serif;
+    animation-name: body;
+    animation-duration: 3s;
+  }
+
+  .Slideshow{
+    visibility: hidden;
+  }
+  .game-canvas{
+    width: 60%;
+  }
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: 40px auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  height: auto;
+}
+
+.dot-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  visibility: hidden;
+}
+
+.dot.active {
+  background-color: #0d122c;
+}
+.start-Überschrift{
+  font-size: 40px;
+}
+.Slideshow{
+  height: 500px;
+}
+.search-box{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.Login-screen{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  
+}
+#downsection:hover{
+  transform: translate(0, 10px);
+}
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-canvas{
+  border: 2px solid #fff;
+  background-color: #000;
+}
+
+.button-spiel {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-spiel:hover {
+  background-color: #007;
+}
+
+.score {
+  color: #fff;
+  font-size: 24px;
+}
+
+.game-over {
+  color: #fff;
+  font-size: 48px;
+}
+.rainbow-text {
+font-size: 2.5rem;
+animation-duration: 3.115s;
+}
+
+.rainbow-text {
+background: linear-gradient(53.13deg,#FFD33D 0,#FB8532 16.02%,#EA4A5A 28.06%,#8A63D2 56.92%,#2188FF 72.93%,#34D058 84%,#FFD33D 100%);
+background-size: auto;
+background-clip: border-box;
+background-clip: text;
+display: inline-block;
+color: transparent;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 6.28s alternate infinite;
+animation-duration: 6.28s;
+background-size: 100%;
+}
+
+@keyframes shine {
+0% {
+background-position:200% left;
+filter: hue-rotate(0);
+}
+62.8% {
+background-position:100% center;
+filter: hue-rotate(180);
+}
+100% {
+background-position:200% right;
+filter: hue-rotate(360);
+}
+}
+h2{
+color: white;
+}
+.Überschrift-Software{
+  color: rgb(96, 255, 4);
+  font-family: 'Rubik Doodle Shadow', serif;
+  font-size: 50px;
+  text-shadow: 0px 0px 8px rgb(3, 240, 62),
+               0px 0px 12px rgb(11, 240, 3),
+               0px 0px 16px rgb(31, 240, 3);                 
+}
+section{
+  display: grid;
+}
+ 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.logo1:nth-child(2){
+  transition-delay: 200ms;
+}
+.logo1:nth-child(3){
+  transition-delay: 400ms;
+}
+.logo1:nth-child(4){
+  transition-delay: 600ms;
+}
+.logo1:nth-child(5){
+  transition-delay: 800ms;
+}
+.logo1:nth-child(6){
+  transition-delay: 600ms;
+}
+.logo1:nth-child(7){
+  transition-delay: 400ms;
+}
+.logo1:nth-child(8){
+  transition-delay: 200ms;
+}.hiddenright{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(50%);
+  transition: all 1s;
+}
+.showright{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+strong{
+  color: rgb(255, 0, 200);
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 0px 8px rgb(240, 3, 149),
+               0px 0px 12px rgb(240, 3, 149),
+               0px 0px 16px rgb(240, 3, 149);
+}
+.Icon-side{
+  position: absolute;
+  bottom: 90px;
+  z-index: 2;
+}
+.Menü-icon{
+  margin-top: 5px;
+  background-color: white;
+  height: 5px;
+  width: 25px;
+  border-radius: 20px;
+  float: none;
+}
+.Menü-icon-Round{
+  position: fixed;
+  bottom: 90px;
+  right: 16px;
+  background-color: #000000;
+  border-radius: 20px;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  border: #fff 1px solid;
+}
+.Menü-icon-Round:hover{
+  transform: scale(1.1);
+}
+.Links-Menü{
+  visibility: hidden;
+}
+.Menü-icon-Round:hover + .Links-Menü{
+  visibility: visible;
+}
+.Links-Menü:hover{
+  visibility: visible;
+}
+
+.Youtube-Menü{
+  position: fixed;
+  bottom: 90px;
+  right: 76px;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #ff0000 1px solid;
+  box-shadow: 0px 0px 8px rgb(240, 3, 3),
+              0px 0px 12px rgb(240, 31, 3),
+              0px 0px 16px rgb(240, 31, 3);
+  border-radius: 20px;
+  transition-delay: 100ms;
+}
+.Youtube-Menü:hover{
+  transform: scale(1.2); 
+}
+.Discord-Menü{
+  position: fixed;
+  bottom: 90px;
+  right: 139px;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rgb(132, 0, 255) 1px solid;
+  box-shadow: 0px 0px 8px rgb(132, 0, 255),
+              0px 0px 12px rgb(125, 3, 240),
+              0px 0px 16px rgb(125, 3, 240);            
+  border-radius: 20px;
+  transition-delay: 200ms;
+}
+.Discord-Menü:hover{
+  transform: scale(1.2);
+}
+.Tik-Tok-Menü{
+  position: fixed;
+  bottom: 90px;
+  right: 202px;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:rgb(37, 51, 247) 1px solid;
+  border-bottom: #dd03fa 1px solid;
+  box-shadow: 0px 0px 8px rgb(37, 51, 247),
+              0px 0px 12px #dd03fa,
+              0px 0px 16px #033dfa;   
+  border-radius: 20px;
+  transition-delay: 300ms;
+}
+.Tik-Tok-Menü:hover{
+  transform: scale(1.2);
+}
+.Insta-Menü{
+  position: fixed;
+  bottom: 90px;
+  right: 265px;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:rgb(93, 37, 247) 1px solid;
+  border-bottom: #ffc72e 1px solid;
+  box-shadow: 0px 0px 8px #eda557,
+              0px 0px 12px #c93a6e,
+              0px 0px 16px #7e549c;                
+  border-radius: 20px;
+  transition-delay: 400ms;
+}
+.Insta-Menü:hover{
+  transform: scale(1.2);
+}

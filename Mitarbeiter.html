@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-Studio/Mitarbeiter</title>
+    <link rel="stylesheet" href="Css/styel.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX3HCX5K4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX3HCX5K4W');
+</script>
+<style>
+  body{
+    --tw-bg-opacity: .9;
+    margin: 0 auto;
+    text-align: center;
+  }
+  canvas{
+    z-index: 100;
+  }
+  img{
+
+    width: 400px;
+  }
+</style>
+<body>
+    <img src="Screenshot 2022-07-09 192903.png" referrerpolicy="same-origin" style="display: block; object-fit: cover; border-radius: 0px; width: 100%; height: 30vh; opacity: 1; object-position: center 50%;">
+
+    <div class="erk">
+        <br><br><br><br>
+        <H1>Herzlichen Glückwunsch du hast den Login geknackt <br><br><br><br></H1>
+        <br><br><br>
+
+
+    </div>
+
+    <div>
+      <img src="Memes/elon-musk-dancing.gif" alt="">
+    </div>
+
+    <script>
+        // do this for 30 seconds
+        var duration = 20 * 1000;
+var end = Date.now() + duration;
+
+(function frame() {
+  // launch a few confetti from the left edge
+  confetti({
+    particleCount: 7,
+    angle: 60,
+    spread: 20,
+    origin: { x: 0 },
+  });
+  // and launch a few from the right edge
+  confetti({
+    particleCount: 7,
+    angle: 120,
+    spread: 20,
+    origin: { x: 1 },
+  });
+
+  // keep going until we are out of time
+  if (Date.now() < end) {
+    requestAnimationFrame(frame);
+  }
+}());
+        </script>
+</body>
+</html>

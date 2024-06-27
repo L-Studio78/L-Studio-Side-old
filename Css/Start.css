@@ -1,0 +1,34 @@
+
+@keyframes Start-end{
+
+  10%{
+    transform: translate(0);
+    visibility: visible;
+  }
+  to{
+    transform: translateX(-100%);
+  }
+
+}
+
+.intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #0f1216;
+    animation: Start-end 5s;
+    visibility: hidden;
+    
+}
+.intro p{
+  color: white;
+  justify-content: center;
+  font-size: 400%;
+}
