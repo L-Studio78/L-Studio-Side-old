@@ -34,6 +34,7 @@ body{
   animation-duration: 2s;
   overflow-x: hidden;
   z-index: 2;
+  text-align: justify;
 }
 
 form {
@@ -144,7 +145,7 @@ nav{
   top: 50%;
   transform: translate(-set,-set);
   background-color: rgba(0,0,0,0. 4);
-  text-align: center;
+  text-align: justify;
 }
 .erk{
    color: var(--primary-color);
@@ -169,7 +170,7 @@ nav{
   align-self: center;
   align-content: center;
   display: flex;
-  text-align: center;
+  text-align:  center;
   font-family: 'Source Code Pro', monospace;
   animation-name: body;
   animation-duration: 3s;
@@ -201,7 +202,6 @@ nav{
    align-self: center;
    align-content: center;
    display: flex;
-   text-align: center;
    position: relative;
 }
 .di{
