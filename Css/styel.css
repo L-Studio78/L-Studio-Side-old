@@ -175,6 +175,8 @@ nav{
   animation-name: body;
   animation-duration: 3s;
 }
+
+
 .ni{
    justify-content: center;
    align-items: center;
@@ -655,8 +657,8 @@ section{
  
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-50%);
+  filter: blur(1px);
+  transform: translateX(-30%);
   transition: all 1s;
 }
 .show{
