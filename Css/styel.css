@@ -828,3 +828,9 @@ strong{
 .Insta-Menü:hover{
   transform: scale(1.2);
 }
+
+.Webseits:hover{
+  cursor: pointer;
+  color: black;
+  text-shadow: #fff;
+}
