@@ -1,81 +1,84 @@
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    background-color: #0f1216;
-    color: 	#f0f0e7;
-
-}
-
-@keyframes Start-end{
-
-    10%{
-      transform: translate(0);
-      visibility: visible;
-    }
-    to{
-      transform: translateX(-100%);
-    }
-  
+@media screen and (max-width: 768px) {
+  body{
+    width: auto;
+    overflow-x: hidden;
   }
-  
-  .intro{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      z-index: 3;
-      align-items: center;
-      justify-content: center;
+  .intro p {
+      font-size: 1.5em;
+  }
+
+  .nav {
       flex-direction: column;
-      background: #0f1216;
-      animation: Start-end 5s;
-      visibility: hidden;
-      
   }
-  .intro p{
-    color: white;
-    justify-content: center;
-    font-size: 400%;
+
+  .link-nav {
+      margin: 5px 0;
   }
-  .na{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-.l{
-    text-transform: uppercase;
-    font-size: 3em;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-shadow: 0 0 5px rgb(0, 0, 0),
-                 0 0 10px rgb(24, 21, 206),
-                 0 0 20px rgb(40, 16, 253),
-                 0 0 40px rgb(5, 46, 228),
-                 0 0 60px rgb(0, 145, 133),
-                 0 0 90px rgb(5, 134, 255),
-                 0 0 120px rgb(8, 233, 158),
-                 0 0 160px rgb(0, 255, 179);
-}
-.text-1{
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: justify;
-    font-size: 30;
-}
-.text-1-under{
-    margin-top: 20px;
-}
-.image{
+
+  .Icon-side {
     position: fixed;
-    background-color: #0f1216;
-    top: 10px;
-}
-.image img{
-    width: 20px;
-    height: 20px;
-    left: 10px;
+    flex-direction: row;
+    bottom: 15px;
+    top: auto;
+    right:60px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .Menü-icon-Round {
+      margin: 0 10px;
+      bottom: 15px;
+      top: auto;
+      right: 70px;
+  }
+
+  .Links-Menü img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .erk, .erk-first {
+      text-align: center;
+  }
+
+  .erk img {
+      width: 100%;
+  }
+
+  .timeline::after {
+      left: 30px;
+  }
+
+  .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+  }
+
+  .left, .right {
+      left: 0;
+  }
+
+  .dienstleistungen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .dienstleistung {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .Bot{
+    display: none;
+  }
 }
