@@ -35,6 +35,7 @@ body{
   overflow-x: hidden;
   z-index: 2;
   text-align: justify;
+  width: 100%;
 }
 
 /**
@@ -520,7 +521,6 @@ button:focus{
   }
 
   .erk-Start{
-    background-color: var(--box-color);
     color: var(--primary-color);
     border: 2rem;
     justify-content: normal;
