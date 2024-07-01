@@ -24,6 +24,7 @@
     transform: translateX(-50%);
     border-radius: 20px;
     padding: 10px;
+    visibility: hidden;
   }
 
   .Menü-icon-Round {

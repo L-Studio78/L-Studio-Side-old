@@ -55,14 +55,14 @@ Scrollbar
 ::-webkit-scrollbar-thumb {
   background: #000;
   border-radius: 10px;
-  border: 4px solid #f8b323;
+  border: 4px solid #2366f8;
   width: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000;
-  border: 4px solid #f8b323;
+  border: 4px solid #236ef8;
 }
 
 
