@@ -862,3 +862,14 @@ strong{
   color: black;
   text-shadow: #fff;
 }
+.Icons-down{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.Icons-down:hover{
+  transform: translateY(-10px);
+}
+#downsection{
+  text-decoration: none;
+}
