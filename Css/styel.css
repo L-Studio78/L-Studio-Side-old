@@ -856,6 +856,27 @@ strong{
 .Insta-Menü:hover{
   transform: scale(1.2);
 }
+.Github{
+  position: fixed;
+  bottom: 90px;
+  right: 329px;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:rgb(93, 37, 247) 1px solid;
+  border-bottom: #e7e7e7 1px solid;
+  box-shadow: 0px 0px 8px #a1a1a1,
+              0px 0px 12px #424242,
+              0px 0px 16px #ffffff;                
+  border-radius: 20px;
+  transition-delay: 400ms;
+}
+.Github:hover{
+  transform: scale(1.2);
+}
 
 .Webseits:hover{
   cursor: pointer;
