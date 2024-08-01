@@ -124,28 +124,6 @@ nav{
     position: relative;
     font-family: 'Akshar', sans-serif;
 }
-.nav{
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  padding: 10px 0; 
-}
-.link-nav{
-    color: rgb(47, 137, 255);
-    font-family: 'Akshar', sans-serif;
-    text-decoration: none;
-    text-shadow: 0px 0px 8px rgb(3, 145, 240),
-                0px 0px 12px rgb(7, 3, 240),
-                0px 0px 16px rgb(7, 3, 240);
-}
-:hover.link-nav{
-    color: rgb(6, 252, 39);
-    text-decoration: underline;
-    text-shadow: 0px 0px 8px rgb(3, 240, 3),
-    0px 0px 12px rgb(3, 240, 15),
-    0px 0px 16px rgb(3, 240, 15);
-}
 .na{
     justify-content: center;
     align-items: center;
@@ -491,58 +469,6 @@ button:focus{
   visibility: visible;
 
 }
-
-@media only screen and (max-width: 37.5em) {
-  #cookiePopup {
-    width: 100%;
-  }
-  .hide {
-    bottom: 2em;
-    right: 0;
-  }
-  .show {
-    right: 0;
-    bottom: 0;
-  }
-
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 800px){
-  .image-start{
-    width: 70%;
-  }
-  .img-miron{
-    width: 70%;
-  }
-
-  .erk-Start{
-    color: var(--primary-color);
-    border: 2rem;
-    justify-content: normal;
-    border: 2rem;
-    align-items: normal;
-    align-self: normal;
-    align-content: normal;
-    display: none;
-    text-align: normal;
-    font-family: 'Akshar', sans-serif;
-    animation-name: body;
-    animation-duration: 3s;
-  }
-
-  .Slideshow{
-    visibility: hidden;
-  }
-  .game-canvas{
-    width: 60%;
-  }
-
-}
 * {
   box-sizing: border-box;
 }
@@ -749,7 +675,7 @@ strong{
 }
 .Menü-icon-Round{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 16px;
   background-color: #000000;
   border-radius: 20px;
@@ -776,7 +702,7 @@ strong{
 
 .Youtube-Menü{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 76px;
   height: 48px;
   width: 48px;
@@ -796,7 +722,7 @@ strong{
 }
 .Discord-Menü{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 139px;
   height: 48px;
   width: 48px;
@@ -816,7 +742,7 @@ strong{
 }
 .Tik-Tok-Menü{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 202px;
   height: 48px;
   width: 48px;
@@ -837,7 +763,7 @@ strong{
 }
 .Insta-Menü{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 265px;
   height: 48px;
   width: 48px;
@@ -858,7 +784,7 @@ strong{
 }
 .Github{
   position: fixed;
-  bottom: 90px;
+  bottom: 40px;
   right: 329px;
   height: 48px;
   width: 48px;
@@ -920,3 +846,77 @@ strong{
     from { background-position: 0px 0px; }
     to { background-position: 500px 0px; }
 }
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px; /* Größe reduziert */
+  margin: auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+  background-color: #131316;
+}
+.slide img {
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  bottom: 15px; /* Abstände angepasst */
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px; /* Polsterung angepasst */
+  border-radius: 5px;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+.text h2 {
+  margin: 0;
+  font-size: 18px; /* Schriftgröße reduziert */
+}
+
+.text p {
+  margin: 5px 0;
+  font-size: 14px; /* Schriftgröße reduziert */
+}
+
+.text .link {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 14px; /* Schriftgröße reduziert */
+}
+
+.text .link:hover {
+  background-color: #0056b3;
+}
+
+.fade {
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+/**
+.map{
+  max-width: 1000px;
+}
+*/
